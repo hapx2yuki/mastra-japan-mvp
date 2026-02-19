@@ -77,13 +77,16 @@ export default function Home() {
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button asChild size="lg" data-testid="hero-cta-primary">
-                <Link href="/getting-started">無料で試す</Link>
+                <Link href="/playground">今すぐ試す</Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" data-testid="hero-cta-secondary">
+                <Link href="/getting-started">はじめる</Link>
               </Button>
               <Button
                 asChild
                 variant="outline"
                 size="lg"
-                data-testid="hero-cta-secondary"
+                data-testid="hero-cta-tertiary"
               >
                 <Link href="/contact">資料請求</Link>
               </Button>
@@ -158,10 +161,15 @@ export default function Home() {
                   複雑な設定は不要。TypeScriptの知識だけで、AIエージェントの構築を始められます。
                   直感的なAPIで、プロトタイプから本番環境までスムーズに移行できます。
                 </p>
-                <div className="mt-8">
+                <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <Button asChild data-testid="code-demo-cta">
+                    <Link href="/playground">
+                      Playgroundで試す
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" data-testid="code-demo-cta-tutorial">
                     <Link href="/getting-started">
-                      チュートリアルを始める
+                      チュートリアルを見る
                     </Link>
                   </Button>
                 </div>
@@ -236,7 +244,7 @@ export default function Home() {
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button asChild size="lg" data-testid="bottom-cta-primary">
-                <Link href="/getting-started">無料で試す</Link>
+                <Link href="/playground">Playgroundを開く</Link>
               </Button>
               <Button
                 asChild

@@ -20,6 +20,14 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <Link
+                  href="/playground"
+                  className="transition-colors hover:text-foreground"
+                >
+                  Agent Playground
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/getting-started"
                   className="transition-colors hover:text-foreground"
                 >

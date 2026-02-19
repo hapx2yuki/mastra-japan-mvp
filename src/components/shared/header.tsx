@@ -15,6 +15,12 @@ export function Header() {
         </Link>
         <nav className="flex items-center gap-6">
           <Link
+            href="/playground"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Playground
+          </Link>
+          <Link
             href="/getting-started"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
